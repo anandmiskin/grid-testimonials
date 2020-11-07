@@ -1,0 +1,133 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.testimonial1 {
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% top;
+    grid-area: test1;
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 5px 5px hsl(0, 0%, 81%);
+}
+
+.testimonial2 {
+    grid-area: test2;
+    background-color: hsl(217, 19%, 35%);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px hsl(0, 0%, 81%);
+}
+
+.testimonial3 {
+    grid-area: test3;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px hsl(0, 0%, 81%);
+}
+
+.testimonial4 {
+    grid-area: test4;
+    background-color: hsl(219, 29%, 14%);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px hsl(0, 0%, 81%);
+}
+
+.testimonial5 {
+    grid-area: test5;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px hsl(0, 0%, 81%);
+}
+
+.background {
+    float: right;
+    position: relative;
+    top: -70px;
+    right: 50px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+        "test1 test1 test1  test1 test2 test5"
+        "test3 test4 test4 test4 test4 test5";
+    grid-gap: 30px;
+    margin: 25px;
+}
+
+.testimonial1>h2 {
+    color:  hsl(0, 0%, 100%);
+    font-weight: 600 !important;
+}
+
+p{
+    color: hsl(0, 0%, 81%);
+    font-size: 13px;
+    opacity: 70%;
+}
+
+.userImg {
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+}
+
+.user {
+    padding-top: 5px;
+}
+
+.verify {
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+}
+
+.name {
+    color: hsl(0, 0%, 81%);
+    font-weight: 500 !important;
+}
+
+.testimonial2 ,.testimonial4 >h2 {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px){
+    .grid-container {
+        display: block;
+        margin: 10px 5%;
+    }
+    
+    .testimonial1,.testimonial2,.testimonial3,.testimonial4,.testimonial5 {
+        margin-bottom: 25px;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
